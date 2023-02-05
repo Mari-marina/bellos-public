@@ -1,0 +1,618 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "DIN Condensed";
+  src: local("DIN Condensed Regular"), local("DIN-Condensed-Regular"), url("../fonts/DINCondensed-Regular.woff2") format("woff2"), url("../fonts/DINCondensed-Regular.woff") format("woff"), url("../fonts/DINCondensed-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Buran USSR";
+  src: local("Buran USSR"), local("Buran-USSR"), url("../fonts/Buran-USSR.woff2") format("woff2"), url("../fonts/Buran-USSR.woff") format("woff"), url("../fonts/Buran-USSR.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Шаблоны (заготовки)
+* @extend %имя шаблона;
+*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: #000000;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  font-family: "", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+sup {
+  color: inherit;
+}
+
+/* =======================================================================================================================
+* Библиотеки
+* раскомментировать для использования 
+*/
+* {
+  scrollbar-width: 0.5rem;
+  scrollbar-color: #000000 #d6d6d6;
+}
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #fff;
+}
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.375rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  background: #eee;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+  border: 0 none #fff;
+  background-color: #1a1a1a;
+  transition: all 280ms ease-in-out;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #000000;
+}
+
+body.lock {
+  overflow: hidden;
+  touch-action: none;
+}
+
+li, h1, h2, h3, p, a {
+  font-family: DIN Condensed;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0px 80px;
+  margin: auto;
+}
+@media all and (max-width: 980px) {
+  .container {
+    padding: 0px 50px;
+  }
+}
+@media all and (max-width: 700px) {
+  .container {
+    padding: 0px 40px;
+  }
+}
+@media all and (max-width: 600px) {
+  .container {
+    padding: 0px 20px;
+  }
+}
+
+/*
+* (i) Стили будут применяться ко 
+* всем классам содержащим *__container
+* Например header__container, main__container и т.д.
+*/
+[class*=__container] {
+  max-width: 74.375rem;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+[class*=-ibg] img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+[class*=-ibg_contain] img {
+  object-fit: contain;
+}
+
+[class*=_overlay-bg] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 280ms ease-in-out 0ms;
+  z-index: 2000;
+  padding: 3.75rem 0.9375rem;
+  overflow-y: auto;
+}
+@media (max-width: 768.98px) {
+  [class*=_overlay-bg]::-webkit-scrollbar {
+    display: none;
+  }
+}
+[class*=_overlay-bg]._is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.page {
+  position: relative;
+  flex: 1 1 auto;
+}
+.page [data-observ] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.125rem;
+  background: transparent;
+  pointer-events: none;
+}
+.page_start {
+  padding-top: 6.25rem;
+}
+
+.wrapper {
+  background: linear-gradient(180deg, #CDCDCD 3.2%, #F3F3F3 100%);
+}
+
+@media all and (max-width: 1130px) {
+  .logo {
+    width: 100px;
+  }
+}
+
+.burger__btn {
+  display: none;
+}
+@media all and (max-width: 960px) {
+  .burger__btn {
+    display: block;
+  }
+}
+
+.header {
+  padding: 36px 0 34px;
+  background: #EBEBEB;
+}
+.header__list {
+  display: flex;
+}
+.header__wrapper, .header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  margin-right: 80px;
+}
+@media all and (max-width: 1220px) {
+  .header__logo {
+    margin-right: 50px;
+  }
+}
+@media all and (max-width: 1100px) {
+  .header__logo {
+    margin-right: 30px;
+  }
+}
+.header__wrapper {
+  justify-content: space-between;
+}
+
+/*
+.icon-menu {
+  display: none;
+  @include media(767) {
+    display: block;
+    position: relative;
+    width: rem(30);
+    height: rem(18);
+    cursor: pointer;
+    z-index: 5;
+    span,
+    &::before,
+    &::after {
+      content: "";
+      transition: all 300ms ease 0ms;
+      right: 0;
+      position: absolute;
+      width: 100%;
+      height: rem(2);
+      background-color: #000;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    span {
+      top: calc(50% - rem(1));
+    }
+    .menu-open & {
+      span {
+        width: 0;
+      }
+      &::before {
+        top: calc(50% - rem(1));
+        transform: rotate(-45deg);
+      }
+      &::after {
+        bottom: calc(50% - rem(1));
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+*/
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+@media all and (max-width: 960px) {
+  .menu {
+    display: none;
+  }
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.menu__item__icon {
+  margin-right: 22px;
+  cursor: pointer;
+}
+.menu__item:not(:last-child) {
+  margin-right: 24px;
+}
+@media all and (max-width: 1130px) {
+  .menu__item:not(:last-child) {
+    margin-right: 14px;
+  }
+}
+.menu__item-first:not(:last-child) {
+  margin-right: 47px;
+  font-size: 18px;
+}
+@media all and (max-width: 1170px) {
+  .menu__item-first:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.menu__item-first {
+  cursor: pointer;
+}
+.menu__item-right {
+  font-size: 14px;
+  margin-right: 30px;
+}
+
+.main__bacground {
+  background-image: url(./../../images/main.png);
+  max-width: 100%;
+  height: 400px;
+  display: grid;
+  align-items: end;
+}
+.main__title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46px;
+  color: #fff;
+  font-family: Buran USSR;
+}
+.main__wrap {
+  background: #fff;
+  border-radius: 15px;
+  max-width: 340px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 8px 20px 44px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+@media all and (max-width: 940px) {
+  .main__wrap-none {
+    display: none;
+  }
+}
+.main__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #4A4A4A;
+  font-family: Buran USSR;
+}
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 58px 58px 36px;
+  align-items: center;
+}
+.main__cont {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0px 80px;
+  margin: auto;
+}
+@media all and (max-width: 1188px) {
+  .main__cont {
+    padding: 0px;
+  }
+}
+
+.brands__icon {
+  margin-top: 74px;
+}
+.brands__wrap {
+  width: 400px;
+  height: 400px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background: #fff;
+  padding: 40px 25px 20px;
+}
+.brands__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+.brands__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #4A4A4A;
+}
+.brands__text-bottom {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #4A4A4A;
+  text-align: right;
+}
+.brands__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.brands__img {
+  width: fit-content;
+  margin: 0 auto;
+}
+.brands__wrapper-bottom-text {
+  background: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  padding: 40px 40px 60px;
+  border-radius: 15px 15px 0 0;
+}
+.brands__description {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #fff;
+  padding: 16px 27px;
+  text-align: center;
+  height: 58px;
+}
+.brands__block-bottom {
+  background: #4A4A4A;
+  max-width: 320px;
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.brands__block-bottom:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+.brands__wrap-bottom {
+  display: flex;
+  border-radius: 15px;
+}
+.brands__block-bottom:first-child {
+  border-radius: 15px 0 0 15px;
+  -webkit-border-radius: 15px 0 0 15px;
+  -moz-border-radius: 15px 0 0 15px;
+  -ms-border-radius: 15px 0 0 15px;
+  -o-border-radius: 15px 0 0 15px;
+}
+.brands__block-bottom:last-child {
+  border-radius: 0 15px 15px 0;
+  -webkit-border-radius: 0 15px 15px 0;
+  -moz-border-radius: 0 15px 15px 0;
+  -ms-border-radius: 0 15px 15px 0;
+  -o-border-radius: 0 15px 15px 0;
+}
+.brands__img-first {
+  margin-top: 10px;
+}
+.brands__img-second, .brands__img-third {
+  margin-top: 34px;
+}
+.brands__img-fourth {
+  margin-top: 20px;
+}
+
+.stock__icon {
+  margin: 74px 0 45px;
+}
+.stock__wrap {
+  padding: 50px 20px;
+  background: #fff;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+.stock__img {
+  margin-right: 20px;
+}
+.stock__wrapper {
+  overflow-x: scroll;
+  display: flex;
+}
+.stock__block {
+  margin-top: 80px;
+}
+.stock__map {
+  height: 400px;
+  width: 100%;
+}
+.stock__list {
+  background: #4A4A4A;
+  display: flex;
+  border-radius: 0 0 15px 15px;
+  -webkit-border-radius: 0 0 15px 15px;
+  -moz-border-radius: 0 0 15px 15px;
+  -ms-border-radius: 0 0 15px 15px;
+  -o-border-radius: 0 0 15px 15px;
+  padding: 44px 40px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.stock__item, .stock__item > a {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 39px;
+  color: #fff;
+}
+.stock__link {
+  margin-left: 14px;
+}
+.stock__subtitle {
+  font-family: "Buran USSR";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46px;
+  color: #000000;
+}
+.stock__block-bottom {
+  margin: 80px 0 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  border: none;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__wrapper, .footer__wrap {
+  display: flex;
+  align-items: center;
+}
+.footer__wrap {
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 50px;
+}
+.footer__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #8A8A8A;
+}
+.footer__wrapper {
+  margin: 50px 0 76px;
+}
