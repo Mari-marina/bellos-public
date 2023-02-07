@@ -587,6 +587,198 @@ li, h1, h2, h3, p, a {
   justify-content: space-between;
 }
 
+.about__img {
+  padding: 18px 0 34px;
+}
+.about__wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about__logo {
+  margin-bottom: 50px;
+}
+.about__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #000000;
+}
+.about__slider {
+  display: flex;
+  margin: 40px 0;
+}
+.about__text:last-child {
+  margin-bottom: 86px;
+}
+
+.mainBrands__img {
+  padding: 13px 0 50px;
+}
+.mainBrands__wrap__img {
+  width: 400px;
+  height: 128px;
+  background: #fff;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainBrands__wrapper {
+  display: flex;
+}
+.mainBrands__wrap__img-second {
+  margin: 0 40px;
+}
+.mainBrands__title {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 57px;
+  color: #000000;
+  font-family: Buran USSR;
+  margin-bottom: 80px;
+}
+.mainBrands__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #000000;
+}
+.mainBrands__wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 130px;
+}
+.mainBrands__wrap-left {
+  margin-right: 56px;
+}
+.mainBrands__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 0;
+}
+
+.cardProduct {
+  background: #fff;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+.cardProduct__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #8D8D8D;
+  margin-bottom: 18px;
+}
+.cardProduct__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #000000;
+  margin-bottom: 12px;
+  max-width: 220px;
+  width: 100%;
+}
+.cardProduct__text-bottom {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
+}
+.cardProduct__text-wrap {
+  border: 1px solid #ACACAC;
+  border-radius: 5px;
+  padding: 7px 33px 7px 9px;
+  width: max-content;
+}
+.cardProduct__wrapper {
+  padding: 20px 28px 25px;
+}
+.cardProduct__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.cardProduct__text-price {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+  position: relative;
+}
+.cardProduct__text-price::after {
+  position: absolute;
+  content: "РУБ";
+  top: 0;
+  right: -28px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000000;
+}
+
+.promotions__img {
+  margin: 18px 0 35px;
+}
+.promotions__wrap {
+  max-width: 400px;
+  width: 100%;
+}
+.promotions__image {
+  object-fit: cover;
+  width: 100%;
+}
+.promotions__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35.5px;
+  color: #000000;
+  padding-bottom: 35px;
+}
+.promotions__block {
+  border: 1px solid #000000;
+  border-radius: 0px 0px 10px 10px;
+  padding: 27px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.promotions__link {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35.5px;
+  color: #000000;
+  font-family: "Buran USSR";
+  text-align: right;
+  margin-top: 36px;
+}
+.promotions__clip {
+  overflow: hidden; /* Обрезаем все, что не помещается в область */
+  padding: 5px; /* Поля вокруг текста */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-clamp: 3;
+  box-orient: vertical;
+}
+.promotions__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.promotions-details__image {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .footer__item {
   font-size: 20px;
   font-weight: 400;
