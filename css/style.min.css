@@ -779,6 +779,183 @@ li, h1, h2, h3, p, a {
   object-fit: cover;
 }
 
+.contacts__img {
+  margin-top: 18px;
+}
+.contacts__block {
+  margin-top: 43px;
+}
+
+.catalog__wrap__block {
+  display: flex;
+  margin: 20px 0 40px;
+  max-width: 740px;
+  width: 100%;
+  justify-content: space-between;
+}
+.catalog__button {
+  border-radius: 10px 0px;
+  width: 170px;
+  height: 50px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #000000;
+}
+.catalog__button:not(:last-child) {
+  margin-right: 14px;
+}
+.catalog__button:hover, .catalog__button:active {
+  background: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+}
+.catalog__wrapper {
+  display: flex;
+}
+.catalog__wrapper {
+  background: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.catalog__block-right {
+  padding: 20px;
+}
+
+.sidebar {
+  width: 305px;
+  background: #fff;
+  border: 1px solid #E4E4E4;
+  padding: 0 20px 85px;
+  margin: 20px;
+  height: 100%;
+}
+.sidebar__subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+.sidebar__label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
+  font-family: "DIN Condensed";
+  margin-top: 10px;
+  cursor: pointer;
+}
+.sidebar__input {
+  width: 124px;
+  height: 26px;
+  border: 1px solid #9E9E9E;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+.sidebar__checkbox {
+  margin-right: 15px;
+}
+.sidebar__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.sidebar__subtitle {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.sidebar__block {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar__checkbox-bottom {
+  margin-top: 52px;
+}
+
+.catalogProduct {
+  background: #fff;
+  display: flex;
+  max-width: 915px;
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #E4E4E4;
+  margin-bottom: 20px;
+}
+.catalogProduct__subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #000000;
+}
+.catalogProduct__subtitle-left {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #8D8D8D;
+  margin-right: 30px;
+}
+.catalogProduct__wrap__subtitle {
+  display: flex;
+  margin: 0 0 38px;
+}
+.catalogProduct__block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4px;
+  padding-top: 10px;
+  border-bottom: 1px solid #E4E4E4;
+}
+.catalogProduct__wrap-right {
+  margin: 0 14px 0 54px;
+}
+.catalogProduct__text:first-child {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #000000;
+}
+.catalogProduct__text:last-child {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.5px;
+  color: #000000;
+  font-family: "Hero";
+}
+.catalogProduct__button {
+  border-radius: 15px;
+  background: #000000;
+  font-family: "Buran USSR";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #fff;
+  padding: 18px 24px;
+  max-width: 220px;
+  width: 100%;
+}
+.catalogProduct__link {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
+  border-bottom: 2px solid #E4E4E4;
+  padding: 0 10px 6px;
+  margin-left: 60px;
+}
+.catalogProduct__wrap-bottom {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 608px;
+  width: 100%;
+  align-items: flex-end;
+}
+
 .footer__item {
   font-size: 20px;
   font-weight: 400;
