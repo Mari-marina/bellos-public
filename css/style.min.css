@@ -381,12 +381,12 @@ li, h1, h2, h3, p, a {
 }
 */
 .burger__btn {
-  background: url(./../images/icons/burger-menu.svg);
+  background: url(./images/icons/burger-menu.svg);
   width: 46px;
   height: 46px;
 }
 .burger__btn.close {
-  background: url(./../images/icons/close.svg);
+  background: url(./images/icons/close.svg);
   width: 46px;
   height: 46px;
 }
@@ -639,6 +639,16 @@ li, h1, h2, h3, p, a {
   height: 80px;
 }
 
+@media all and (max-width: 950px) {
+  .brands {
+    margin-top: 116px;
+  }
+}
+@media all and (max-width: 500px) {
+  .brands {
+    margin-top: 80px;
+  }
+}
 .brands__icon {
   margin-top: 74px;
 }
@@ -837,6 +847,16 @@ li, h1, h2, h3, p, a {
   }
 }
 
+@media all and (max-width: 950px) {
+  .stock {
+    margin-top: 116px;
+  }
+}
+@media all and (max-width: 500px) {
+  .stock {
+    margin-top: 80px;
+  }
+}
 .stock__icon {
   margin: 74px 0 45px;
 }
@@ -949,6 +969,16 @@ li, h1, h2, h3, p, a {
   }
 }
 
+@media all and (max-width: 950px) {
+  .about {
+    margin-top: 116px;
+  }
+}
+@media all and (max-width: 500px) {
+  .about {
+    margin-top: 80px;
+  }
+}
 .about__img {
   padding: 18px 0 34px;
 }
@@ -1010,6 +1040,16 @@ li, h1, h2, h3, p, a {
   }
 }
 
+@media all and (max-width: 950px) {
+  .mainBrands {
+    margin-top: 116px;
+  }
+}
+@media all and (max-width: 500px) {
+  .mainBrands {
+    margin-top: 80px;
+  }
+}
 .mainBrands__img {
   padding: 13px 0 50px;
 }
@@ -1025,10 +1065,35 @@ li, h1, h2, h3, p, a {
 .mainBrands__wrapper {
   display: flex;
 }
+.mainBrands__title-top {
+  display: none;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 57px;
+  color: #000000;
+  font-family: Buran USSR;
+  margin-bottom: 20px;
+}
+@media all and (max-width: 1300px) {
+  .mainBrands__title-top {
+    display: block;
+    margin-top: 40px;
+  }
+}
 .mainBrands__wrap__img-second {
   margin: 0 40px;
 }
-.mainBrands__title {
+@media all and (max-width: 520px) {
+  .mainBrands__wrap__img-second {
+    margin: 0 20px;
+  }
+}
+@media all and (max-width: 440px) {
+  .mainBrands__wrap__img-second {
+    margin: 0 5px;
+  }
+}
+.mainBrands__title-bottom {
   font-size: 50px;
   font-weight: 400;
   line-height: 57px;
@@ -1036,25 +1101,87 @@ li, h1, h2, h3, p, a {
   font-family: Buran USSR;
   margin-bottom: 80px;
 }
+@media all and (max-width: 1300px) {
+  .mainBrands__title-bottom {
+    display: none;
+  }
+}
 .mainBrands__text {
   font-size: 20px;
   font-weight: 400;
   line-height: 35px;
   color: #000000;
 }
+@media all and (max-width: 1300px) {
+  .mainBrands__text {
+    margin-top: 40px;
+  }
+}
+@media all and (max-width: 700px) {
+  .mainBrands__text {
+    margin-top: 20px;
+  }
+}
+@media all and (max-width: 500px) {
+  .mainBrands__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #000000;
+    text-align: center;
+  }
+}
+@media all and (max-width: 740px) {
+  .mainBrands__slider__img {
+    max-width: 660px;
+    width: 100%;
+  }
+}
 .mainBrands__wrap {
   display: flex;
   justify-content: space-between;
   margin-top: 130px;
 }
+@media all and (max-width: 1300px) {
+  .mainBrands__wrap {
+    flex-direction: column-reverse;
+    margin-top: 0px;
+  }
+}
 .mainBrands__wrap-left {
   margin-right: 56px;
+}
+@media all and (max-width: 1300px) {
+  .mainBrands__wrap-left {
+    margin-right: 0;
+  }
 }
 .mainBrands__cards {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 80px 0;
+  overflow-x: scroll;
+}
+@media all and (max-width: 800px) {
+  .mainBrands__cards {
+    margin: 40px 0;
+  }
+}
+@media all and (max-width: 1388px) {
+  .mainBrands__cards > section {
+    margin: 0 12px;
+  }
+}
+@media all and (max-width: 920px) {
+  .mainBrands__images {
+    width: 150px;
+  }
+}
+@media all and (max-width: 720px) {
+  .mainBrands__images {
+    width: 100px;
+  }
 }
 
 .cardProduct {
@@ -1070,6 +1197,11 @@ li, h1, h2, h3, p, a {
   line-height: 18px;
   color: #8D8D8D;
   margin-bottom: 18px;
+}
+@media all and (max-width: 800px) {
+  .cardProduct__subtitle {
+    margin-bottom: 10px;
+  }
 }
 .cardProduct__text {
   font-size: 16px;
@@ -1095,6 +1227,11 @@ li, h1, h2, h3, p, a {
 .cardProduct__wrapper {
   padding: 20px 28px 25px;
 }
+@media all and (max-width: 800px) {
+  .cardProduct__wrapper {
+    padding: 16px 16px 18px;
+  }
+}
 .cardProduct__wrap {
   display: flex;
   justify-content: space-between;
@@ -1117,12 +1254,38 @@ li, h1, h2, h3, p, a {
   color: #000000;
 }
 
+@media all and (max-width: 950px) {
+  .promotions {
+    margin-top: 116px;
+  }
+}
+@media all and (max-width: 500px) {
+  .promotions {
+    margin-top: 80px;
+  }
+}
 .promotions__img {
   margin: 18px 0 35px;
 }
 .promotions__wrap {
   max-width: 400px;
   width: 100%;
+}
+@media all and (max-width: 1400px) {
+  .promotions__wrap {
+    margin: 14px;
+    max-width: 345px;
+  }
+}
+@media all and (max-width: 830px) {
+  .promotions__wrap {
+    max-width: 600px;
+  }
+}
+@media all and (max-width: 430px) {
+  .promotions__wrap {
+    margin: 40px 0;
+  }
 }
 .promotions__image {
   object-fit: cover;
@@ -1135,12 +1298,25 @@ li, h1, h2, h3, p, a {
   color: #000000;
   padding-bottom: 35px;
 }
+@media all and (max-width: 500px) {
+  .promotions__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #4A4A4A;
+  }
+}
 .promotions__block {
   border: 1px solid #000000;
   border-radius: 0px 0px 10px 10px;
   padding: 27px 20px 20px;
   display: flex;
   flex-direction: column;
+}
+@media all and (max-width: 450px) {
+  .promotions__block {
+    padding: 27px 14px 12px 20px;
+  }
 }
 .promotions__link {
   font-size: 20px;
@@ -1150,6 +1326,11 @@ li, h1, h2, h3, p, a {
   font-family: "Buran USSR";
   text-align: right;
   margin-top: 36px;
+}
+@media all and (max-width: 500px) {
+  .promotions__link {
+    margin-top: 14px;
+  }
 }
 .promotions__clip {
   overflow: hidden; /* Обрезаем все, что не помещается в область */
@@ -1170,6 +1351,12 @@ li, h1, h2, h3, p, a {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media all and (max-width: 1400px) {
+  .promotions__wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 .promotions-details__image {
   height: 300px;
@@ -1177,6 +1364,32 @@ li, h1, h2, h3, p, a {
   object-fit: cover;
 }
 
+@media all and (max-width: 950px) {
+  .promotions {
+    margin-top: 116px;
+  }
+}
+@media all and (max-width: 500px) {
+  .promotions {
+    margin-top: 80px;
+  }
+}
+@media all and (max-width: 500px) {
+  .promotions__text {
+    padding-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .contacts {
+    margin-top: 116px;
+  }
+}
+@media all and (max-width: 500px) {
+  .contacts {
+    margin-top: 80px;
+  }
+}
 .contacts__img {
   margin-top: 18px;
 }
@@ -1427,6 +1640,21 @@ li, h1, h2, h3, p, a {
   width: 100%;
 }
 
+@media all and (max-width: 950px) {
+  .politics {
+    margin-top: 116px;
+  }
+}
+@media all and (max-width: 950px) and (max-width: 500px) {
+  .politics {
+    background: #fff;
+  }
+}
+@media all and (max-width: 500px) {
+  .politics {
+    margin-top: 80px;
+  }
+}
 .politics__img {
   margin: 18px 0 44px;
 }
@@ -1436,11 +1664,24 @@ li, h1, h2, h3, p, a {
   padding: 40px;
   margin-bottom: 80px;
 }
+@media all and (max-width: 500px) {
+  .politics__wrap {
+    padding: 60px 16px;
+  }
+}
 .politics__text {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   color: #000000;
+}
+@media all and (max-width: 500px) {
+  .politics__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #000000;
+  }
 }
 .politics__title {
   font-size: 40px;
@@ -1450,7 +1691,27 @@ li, h1, h2, h3, p, a {
   font-family: "Buran USSR";
   margin-bottom: 40px;
 }
+@media all and (max-width: 500px) {
+  .politics__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 9px;
+  }
+}
 
+@media all and (max-width: 950px) {
+  .error {
+    margin-top: 116px;
+  }
+}
+@media all and (max-width: 500px) {
+  .error {
+    margin-top: 80px;
+    background: #fff;
+  }
+}
 .error__img {
   margin: 18px 0 44px;
 }
@@ -1463,6 +1724,12 @@ li, h1, h2, h3, p, a {
   padding: 97px 0;
   margin-bottom: 120px;
 }
+@media all and (max-width: 500px) {
+  .error__wrap {
+    margin-bottom: 10px;
+    padding: 0 0 97px;
+  }
+}
 .error__title {
   font-size: 200px;
   font-weight: 400;
@@ -1471,12 +1738,39 @@ li, h1, h2, h3, p, a {
   font-family: "Buran USSR";
   margin-bottom: 48px;
 }
+@media all and (max-width: 960px) {
+  .error__title {
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 200px;
+    color: #000000;
+  }
+}
+@media all and (max-width: 500px) {
+  .error__title {
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 140px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+}
 .error__text {
   font-family: "Buran USSR";
   font-size: 24px;
   font-weight: 400;
   line-height: 28px;
   color: #000000;
+  margin: 0 15px;
+  text-align: center;
+}
+@media all and (max-width: 500px) {
+  .error__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #000000;
+  }
 }
 
 .footer__item {
