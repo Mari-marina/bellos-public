@@ -381,12 +381,12 @@ li, h1, h2, h3, p, a {
 }
 */
 .burger__btn {
-  background: url(./images/icons/burger-menu.svg);
+  background: url(./../images/icons/burger-menu.svg);
   width: 46px;
   height: 46px;
 }
 .burger__btn.close {
-  background: url(./images/icons/close.svg);
+  background: url(./../images/icons/close.svg);
   width: 46px;
   height: 46px;
 }
