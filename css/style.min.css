@@ -302,6 +302,10 @@ details[open] img {
   -webkit-transform: rotate(180deg);
 }
 
+details summary::-webkit-details-marker {
+  display: none;
+}
+
 .header {
   padding: 36px 0 34px;
   background: #EBEBEB;
