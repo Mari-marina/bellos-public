@@ -24,8 +24,8 @@
         <ul class="menu__list">
           <li class="menu__item menu__item__icon"><a href="89687688333"><img src="./images/icons/tel.svg" alt=""></a>
           </li>
-          <li class="menu__item menu__item__icon"><a><img src="./images/icons/telegrem.svg" alt=""></a></li>
-          <li class="menu__item menu__item__icon"><a href="./404.html"><img src="./images/icons/personal-account.svg" alt=""></a></li>
+          <li class="menu__item menu__item__icon"><a href="./404.html"><img src="./images/icons/telegrem.svg" alt=""></a></li>
+          <li id="modalBtn" class="menu__item menu__item__icon"><a><img src="./images/icons/personal-account.svg" alt=""></a></li>
           <li class="menu__item menu__item__icon menu__item-right">ИМЯ ПОЛЬЗОВАТЕЛЯ</li>
         </ul>
         
@@ -33,7 +33,66 @@
       <div class="burger burger__btn"></div>
     </div>
   </div>
+  <div class="modal">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Логин</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Пароль</p>
+          <input class="modal__input modal__input__pass" type="password">
+          <button class="modal__button">ВХОД</button>
+          <button class="modal__button modal__button-second">ЗАЯВКА НА ЛИЧНЫЙ КАБИНЕТ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="modal-second">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-new" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <button class="modal__button">ОСТАВИТЬ ЗАЯВКУ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-third">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-third" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <button class="modal__button">ОСТАВИТЬ ЗАЯВКУ</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 </header>
 
     <div class="wrapper">
@@ -57,7 +116,7 @@
   <div class="container">
     <div class="stock__block-bottom">
       <h2 class="stock__subtitle">Оставь заявку на личный кабинет</h2>
-      <div class="main__wrap">
+      <div class="main__wrap" id="main__wrapthird">
         <h3 class="main__subtitle">ЗАЯВКА НА ЛИЧНЫЙ КАБИНЕТ</h3>
         <img src="./images/icons/gear.svg" alt="">
       </div>
