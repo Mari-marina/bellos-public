@@ -2383,6 +2383,8 @@ details summary::-webkit-details-marker {
   height: 50px;
   padding: 0 20px;
   margin-bottom: 15px;
+  font-size: 14px;
+  font-family: "DIN Condensed";
 }
 @media all and (max-width: 500px) {
   .modal__input {
@@ -2416,9 +2418,36 @@ details summary::-webkit-details-marker {
     margin: 11px 0;
   }
 }
+.modal__block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.modal__button__text {
+  text-align: center;
+  cursor: pointer;
+}
+.modal__title {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 43px;
+  color: #000000;
+  margin: 35px 0 30px;
+}
 .modal__button-second {
   background: #fff;
   color: #000000;
+  text-align: center;
+  cursor: pointer;
+}
+.modal__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 86px;
+  text-align: center;
 }
 
 .close-btn, .close-btn-new {
@@ -2426,7 +2455,8 @@ details summary::-webkit-details-marker {
 }
 
 .modal-second,
-.modal-third {
+.modal-third,
+.modal-fourth {
   position: absolute;
   background: rgba(20, 20, 20, 0.4039215686);
   align-items: center;
@@ -2442,6 +2472,10 @@ details summary::-webkit-details-marker {
 }
 
 .modal-third {
+  display: none;
+}
+
+.modal-fourth {
   display: none;
 }
 
