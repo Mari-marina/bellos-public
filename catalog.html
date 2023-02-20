@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>каталог</title>
+</head>
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a href="./index.html">
+        <img class="header__logo logo" src="./images/icons/logo.svg" alt=""></a>
+      <nav class="header__menu menu nav">
+        <ul class="menu__list">
+          <li class="menu__item-first"><a a href="./about.html" class="menu__link">О КОМПАНИИ</a></li>
+          <li class="menu__item-first"><a a href="./main-brands.html" class="menu__link">БРЕНДЫ</a></li>
+          <li class="menu__item-first"><a a href="./main-promotions.html" class="menu__link">АКЦИИ</a></li>
+          <li class="menu__item-first"><a a href="./main-contacts.html" class="menu__link">КОНТАКТЫ</a></li>
+        </ul>
+        <ul class="menu__list">
+          <li class="menu__item menu__item__icon"><a href="89687688333"><img src="./images/icons/tel.svg" alt=""></a>
+          </li>
+          <li class="menu__item menu__item__icon"><a href="./404.html"><img src="./images/icons/telegrem.svg" alt=""></a></li>
+          <li id="modalBtn" class="menu__item menu__item__icon"><a><img src="./images/icons/personal-account.svg" alt=""></a></li>
+          <li class="menu__item menu__item__icon menu__item-right">ИМЯ ПОЛЬЗОВАТЕЛЯ</li>
+        </ul>
+        
+      </nav>
+      <div class="burger burger__btn"></div>
+    </div>
+  </div>
+  <div class="modal">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Логин</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Пароль</p>
+          <input class="modal__input modal__input__pass" type="password">
+          <button class="modal__button">ВХОД</button>
+          <p class="modal__button modal__button-second" id="create-an-application">ЗАЯВКА НА ЛИЧНЫЙ КАБИНЕТ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-second">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-new" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-third">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-third" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <form class="modal__form">
+          <p class="modal__text">Имя</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">Номер</p>
+          <input class="modal__input modal__input__pass" type="tel">
+          <p class="modal__button modal__button__text" id="application-processing2"> ОСТАВИТЬ ЗАЯВКУ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-fourth">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn close-btn-fourth" src="./images/icons/close.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title">ВАША ЗАЯВКА ПРИНЯТА</h2>
+          <h3 class="modal__subtitle">МЫ СВЯЖЕМСЯ С ВАМИ В БЛИЖАЙШЕЕ ВРЕМЯ</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+    <div class="wrapper">
+      
+      <main class="page" id="brands">
+        <section class="catalog">
+  <div class="container">
+    <div class="catalog__wrap__block">
+      <a href="./main-catalog.html"><button class="catalog__button">КАТАЛОГ</button></a>
+      <a href="./order.html"><button class="catalog__button">СОЗДАТЬ ЗАКАЗ</button></a>
+      <a href="#"><button class="catalog__button">ИСТОРИЯ ЗАКАЗОВ</button></a>
+      <a href="#"><button class="catalog__button">ЛИЧНЫЕ ДАННЫЕ</button></a> 
+    </div>
+    <div class="catalog__wrap__block-mobile">
+      <a class="catalog__link-mobile" href="./main-catalog.html"><button class="catalog__button-mobile">КАТАЛОГ</button></a>
+      <a class="catalog__link-mobile" href="./order.html"><button class="catalog__button-mobile">СОЗДАТЬ ЗАКАЗ</button></a>
+      <a class="catalog__link-mobile" href="#"><button class="catalog__button-mobile">ИСТОРИЯ ЗАКАЗОВ</button></a>
+      <a class="catalog__link-mobile" href="#"><button class="catalog__button-mobile">ЛИЧНЫЕ ДАННЫЕ</button></a> 
+    </div>
+   
+  </div>
+</section>
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <a href="./index.html">
+      <img class="footer__img-top" src="./images/icons/logo.svg" alt="">
+    </a>
+    <ul class="menu__list footer__list">
+      <li class="menu__item-first footer__item"><a href="./about.html"> О КОМПАНИИ</a></li>
+      <li class="menu__item-first footer__item"><a href="./main-brands.html">БРЕНДЫ</a></li>
+      <li class="menu__item-first footer__item"><a href="./main-promotions.html">АКЦИИ</a></li>
+      <li class="menu__item-first footer__item"><a href="./main-contacts.html">КОНТАКТЫ</a> </li>
+      <li class="menu__item-first footer__item"><a href="./404.html">ЛИЧНЫЙ КАБИНЕТ</a></li>
+    </ul>
+    <div class="footer__wrapper">
+      <a href="./index.html">
+        <img class="footer__img" src="./images/icons/logo.svg" alt="">
+      </a>
+      <div class="footer__wrap">
+        <p class="footer__text footer__text-left">Г. МОСКВА, ПРОЕЗД ПОХОДНЫЙ, Д. 4 К. 1 ЭТАЖ МАНСАРДНЫЙ ПОМ. XIII Ч К №4</p>
+        <a href="./politics.html">
+          <p class="footer__text">ПОЛИТИКА КОНФЕДЕНЦИАЛЬНОСТИ</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html> 
