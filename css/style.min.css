@@ -2361,11 +2361,11 @@ details summary::-webkit-details-marker {
 
 .modal {
   display: none;
-  position: absolute;
+  position: fixed;
   background: rgba(20, 20, 20, 0.4039215686);
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: 20;
   top: 0px;
@@ -2487,11 +2487,11 @@ details summary::-webkit-details-marker {
 .modal-second,
 .modal-third,
 .modal-fourth {
-  position: absolute;
+  position: fixed;
   background: rgba(20, 20, 20, 0.4039215686);
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   z-index: 20;
   top: 0px;
