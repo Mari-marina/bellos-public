@@ -22,7 +22,7 @@
           <li class="menu__item-first"><a a href="./main-contacts.html" class="menu__link">КОНТАКТЫ</a></li>
         </ul>
         <ul class="menu__list">
-          <li class="menu__item menu__item__icon"><a href="89687688333"><img src="./images/icons/tel.svg" alt=""></a>
+          <li class="menu__item menu__item__icon"><a href="./404.html"><img src="./images/icons/tel.svg" alt=""></a>
           </li>
           <li class="menu__item menu__item__icon"><a href="./404.html"><img src="./images/icons/telegrem.svg" alt=""></a></li>
           <li id="modalBtn" class="menu__item menu__item__icon"><a><img src="./images/icons/personal-account.svg" alt=""></a></li>
@@ -121,18 +121,58 @@
     <div class="catalog__wrap__block">
       <a href="./main-catalog.html"><button class="catalog__button">КАТАЛОГ</button></a>
       <a href="./order.html"><button class="catalog__button">СОЗДАТЬ ЗАКАЗ</button></a>
-      <a href="#"><button class="catalog__button">ИСТОРИЯ ЗАКАЗОВ</button></a>
-      <a href="#"><button class="catalog__button">ЛИЧНЫЕ ДАННЫЕ</button></a> 
+      <a href="./history-order.html"><button class="catalog__button">ИСТОРИЯ ЗАКАЗОВ</button></a>
+      <a href="./data.html"><button class="catalog__button">ЛИЧНЫЕ ДАННЫЕ</button></a> 
     </div>
    
   </div>
 </section>
         <section class="order">
   <div class="container">
+    <ul class="catalog__list-top">
+      <li class="catalog__item-top"><a href="#">Личный кабинет</a></li>
+      <li class="catalog__item-top"><a href="#">Создать заказ</a></li>
+    </ul>
     <div class="order__blocks">
+      
     <div class="order__wrapper">
+      
       <div class="order__wrap order__wrap-left">
         <input class="order__input" type="text" placeholder="ПОИСК">
+        <div class="active select-block">
+  <div class="select-placeholder">
+    ПОИСК ПО КАТЕГОРИЯМ
+  </div>
+  <div class="select-items">
+    <div class="wrap">
+      <label for="item-1">ПОИСК ПО КАТЕГОРИЯМ</label>
+      <input type="radio" id="item-1" name="select-items">
+    </div>
+    <div class="wrap">
+      <label for="item-2"><details class="order__details" open>
+            <summary class="order__summary">
+              Охлаждающие жидкости
+              <img src="./images/icons/plus.svg" alt="">
+            </summary>
+            <p class="order__text">СВ ХИМ</p>
+            <p class="order__text">Лукойл</p>
+            <p class="order__text">Нордойл</p>
+            <p class="order__text">Газпромнефть</p>
+            <p class="order__text">Обникс</p>
+          </details></label>
+      <input type="radio" id="item-2" name="select-items">
+    </div>
+    <div class="wrap">
+      <label for="item-3">Тормозные жидкости</label>
+      <input type="radio" id="item-3" name="select-items">
+    </div>
+    <div class="wrap">
+      <label for="item-4">Моторные масла</label>
+      <input type="radio" id="item-4" name="select-items">
+    </div>
+  </div>
+</div>
+
         <div class="order__details__block">
           <h3 class="order__subtitle">ПОИСК ПО КАТЕГОРИЯМ</h3>
           <details class="order__details" open>

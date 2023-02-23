@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>акции подробности</title>
+  <title>каталог</title>
 </head>
 
   <body>
@@ -116,31 +116,101 @@
     <div class="wrapper">
       
       <main class="page" id="brands">
-        <section class="promotions">
-<div class="container">
-  <img class="promotions__img" src="./images/promotions/promotions.svg" alt="">
-      <div class="promotions-details">
-        <img src="./images/promotions/1.png" alt="" class="promotions-details__image">
-        <div class="promotions__block">
-        <p class="promotions-details__text promotions__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </div>
-      </div>
-</div>
-</section>
-        
-      </main>
-      <footer class="footer">
+        <section class="catalog">
   <div class="container">
-    <div class="stock__block-bottom">
-      <h2 class="stock__subtitle">Оставь заявку на личный кабинет</h2>
-      <div class="main__wrap" id="main__wrapthird">
-        <h3 class="main__subtitle">ЗАЯВКА НА ЛИЧНЫЙ КАБИНЕТ</h3>
-        <img src="./images/icons/gear.svg" alt="">
-      </div>
+    <div class="catalog__wrap__block">
+      <a href="./main-catalog.html"><button class="catalog__button">КАТАЛОГ</button></a>
+      <a href="./order.html"><button class="catalog__button">СОЗДАТЬ ЗАКАЗ</button></a>
+      <a href="./history-order.html"><button class="catalog__button">ИСТОРИЯ ЗАКАЗОВ</button></a>
+      <a href="./data.html"><button class="catalog__button">ЛИЧНЫЕ ДАННЫЕ</button></a> 
     </div>
+   
   </div>
-</footer>
+</section>
+        <section class="data">
+  <div class="container">
+    <div class="data__wrapper">
+      <div class="data__content">
+      <div class="data__wrap">
+        <h2 class="data__subtitle">Имя Фамилия</h2>
+        <div class="data__reg">
+          <p class="data__reg__text">Дата регистрации</p>
+          <p class="data__reg__text">12.12.2022</p>
+        </div>
+        <div class="data__block">
+          <div class="data__block-small">
+            <p class="data__block__text">Средняя сумма за заказa</p>
+            <p class="data__block__text">155 000 руб.</p>
+          </div>
+          <div class="data__block-small">
+            <p class="data__block__text">Скидка</p>
+            <p class="data__block__text">10%</p>
+          </div>
+          <div class="data__block-small">
+            <p class="data__block__text">Средняя экономия</p>
+            <p class="data__block__text">10 000 руб.</p>
+          </div>
+        </div>
+      </div>
+      <h4 class="data__subtitle-mini">ЧАСТЫЕ ЗАКАЗЫ</h4>
+        <div class="data__wrap-bottom">
+          <div class="data__block-bottom">
+            <p class="data__text-bottom">товар 1.</p>
+            <p class="data__text-bottom">2 раза</p>
+          </div>
+          <div class="data__block-bottom">
+            <p class="data__text-bottom">товар 1.</p>
+            <p class="data__text-bottom">3 раза</p>
+          </div>
+          <div class="data__block-bottom">
+            <p class="data__text-bottom">товар 1.</p>
+            <p class="data__text-bottom">10 раз</p>
+          </div>
+          <div class="data__block-bottom">
+            <p class="data__text-bottom">товар 1.</p>
+            <p class="data__text-bottom">20 раз</p>
+          </div>
+          <div class="data__block-bottom">
+            <p class="data__text-bottom">товар 1.</p>
+            <p class="data__text-bottom">2 раза</p>
+          </div>
+          <div class="data__block-bottom">
+            <p class="data__text-bottom">товар 1.</p>
+            <p class="data__text-bottom">3 раза</p>
+          </div>
+        </div>
+        <button class="data__button">выход из кабинета</button>
+      </div>
+      <div class="data__content">
+        <h3 class="data__subtitle-small">СТАТИСТИКА ЗАКАЗОВ</h3>
+        <div class="data__wrap-right">
+          <div class="canvas">
+            <svg class="chart" width="305" height="305" viewbox="0 0 50 50">
+              <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              <!-- <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+              <circle class="unit" r="15.9" cx="50%" cy="50%"></circle> -->
+            </svg>
+            </div>
+          
+          <div class="data__block__btn">
+            <p class="data__block__btn__text">ПЕРИОД</p>
+            <button class="data__block__button">ПОСЛЕДНИЙ ЗАКАЗ</button>
+            <button class="data__block__button">ЗА МЕСЯЦ</button>
+            <button class="data__block__button">ЗА ГОД</button>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+  </section></main></div>
+
+        
+      
       <footer class="footer">
   <div class="container">
     <a href="./index.html">
@@ -166,7 +236,7 @@
     </div>
   </div>
 </footer>
-    </div>
+    
     <script src="js/app.min.js"></script>
   </body>
 </html> 
