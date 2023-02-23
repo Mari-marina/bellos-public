@@ -2874,6 +2874,11 @@ details summary::-webkit-details-marker {
   padding: 30px 30px 84px;
   justify-content: space-between;
 }
+@media all and (max-width: 1160px) {
+  .data__wrapper {
+    flex-direction: column;
+  }
+}
 .data__button {
   border-radius: 15px;
   background: #000000;
@@ -2905,10 +2910,20 @@ details summary::-webkit-details-marker {
   justify-content: space-around;
   align-items: center;
 }
+@media all and (max-width: 600px) {
+  .data__wrap-right {
+    flex-direction: column-reverse;
+  }
+}
 .data__content:last-child {
   max-width: 740px;
   width: 100%;
   margin-left: 28px;
+}
+@media all and (max-width: 1160px) {
+  .data__content:last-child {
+    margin-left: 0;
+  }
 }
 .data__content:first-child {
   max-width: 452px;
