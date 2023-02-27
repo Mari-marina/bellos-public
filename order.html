@@ -132,6 +132,40 @@
     </div>
   </div>
 </div>
+<div class="modal-six">
+  <div class="modal__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap__btn">
+        <img class="close-btn-six" src="./images/icons/Union.svg" alt="">
+      </div>
+      <div class="modal__wrap">
+        <div class="modal-fifth__block">
+          <h2 class="modal-fifth__subtitle">Масло моторное C.N.R.G. N-Force Special RS 5W-30 SN/CF; C3 (кан. 1 л)</h2>
+        </div>
+        <form class="modal__form">
+          <p class="modal__text">КОЛЛИЧЕСТВО</p>
+          <input class="modal__input modal__input__name" type="text" name="name">
+          <p class="modal__text">ЦЕНА</p>
+          <div class="modal-fifth__price">786 РУБ</div>
+          <p class="modal__button modal__button__text adopted">ДОБАВИТЬ</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-seven">
+  <div class="modal__wrapper modal-fourth__wrapper">
+    <div class="modal__header">
+      <div class="modal__wrap modal-seven__wrap">
+        <img src="./images/icons/personal-account.svg" alt="" class="modal__img">
+        <div class="modal__block">
+          <h2 class="modal__title modal-seven__title">ВАШ ЗАКАЗ ПРИНЯТ</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </header>
 
 
@@ -608,7 +642,7 @@
         <h3 class="order__price-subtitle">СУММА ЗАКАЗА</h3>
         <h3 class="order__price">15000 РУБ</h3>
       </div>
-      <div class="order__button">
+      <div class="button__six order__button">
         <p class="order__button__text">заказать</p>
         <img class="order__button__img" src="./images/icons/Subtract.svg" alt="">
       </div>
@@ -644,6 +678,39 @@ plus.addEventListener('click', function() {
 let counts = document.querySelectorAll('.counter');
 
 counts.forEach(counterFunction);
+
+
+let modalButtonSix = document.querySelector(".button__six");
+let modalSix = document.querySelector(".modal-six");
+let modalSixClose = document.querySelector(".close-btn-six");
+
+modalButtonSix.addEventListener("click", function () {
+  modalSix.style.display = "flex";
+});
+modalSixClose.addEventListener("click", function () {
+  modalSix.style.display = "none";
+});
+modalSix.addEventListener("click", function (event) {
+  if (event.target === modalSix) {
+    modalSix.style.display = "none";
+  }
+});
+
+let modalButtonSeven = document.querySelector(".adopted");
+let modalSeven = document.querySelector(".modal-seven");
+// let modalSevenClose = document.querySelector(".close-btn-six");
+modalButtonSeven.addEventListener("click", function () {
+  modalSix.style.display = "none";
+});
+modalButtonSeven.addEventListener("click", function () {
+  modalSeven.style.display = "flex";
+});
+
+modalSeven.addEventListener("click", function (event) {
+  if (event.target === modalSeven) {
+    modalSeven.style.display = "none";
+  }
+});
 </script>
         
       </main>

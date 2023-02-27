@@ -2487,7 +2487,9 @@ details summary::-webkit-details-marker {
 .modal-second,
 .modal-third,
 .modal-fourth,
-.modal-fifth {
+.modal-fifth,
+.modal-six,
+.modal-seven {
   position: fixed;
   background: rgba(20, 20, 20, 0.4039215686);
   align-items: center;
@@ -2508,6 +2510,22 @@ details summary::-webkit-details-marker {
 
 .modal-fourth {
   display: none;
+}
+
+.modal-six {
+  display: none;
+}
+
+.modal-seven {
+  display: none;
+}
+.modal-seven__title {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 44px;
+}
+.modal-seven__wrap {
+  margin: 80px 0 80px;
 }
 
 .modal-fifth {
