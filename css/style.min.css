@@ -1751,6 +1751,11 @@ input[type=range]::-webkit-slider-thumb {
 }
 @media all and (max-width: 1154px) {
   .sidebar {
+    width: auto;
+  }
+}
+@media all and (max-width: 500px) {
+  .sidebar {
     display: none;
   }
 }
@@ -1798,7 +1803,6 @@ input[type=range]::-webkit-slider-thumb {
   justify-content: space-between;
 }
 .sidebar__subtitle {
-  margin-bottom: 20px;
   margin-top: 20px;
 }
 .sidebar__block {
@@ -3217,8 +3221,11 @@ details summary::-webkit-details-marker {
   padding: 0 5px 10px;
   display: flex;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 36px;
   justify-content: center;
+}
+.history-order__row {
+  border-bottom: 1px solid #D9D9D9;
 }
 .history-order__text {
   width: max-content;
@@ -3231,6 +3238,9 @@ details summary::-webkit-details-marker {
   padding: 16px 20px;
   color: #fff;
   font-family: "Buran USSR";
+  margin: 20px 0;
+  max-height: 50px;
+  height: 100%;
 }
 .history-order__wrapper {
   background: #fff;
@@ -3274,9 +3284,13 @@ details summary::-webkit-details-marker {
   width: 100%;
   padding: 10px 48px;
 }
+.history-order__line-color {
+  border: 1px solid #E4E4E4;
+  padding: 5px;
+}
 .history-order__pillar {
   margin-bottom: 1px solid #D9D9D9;
-  padding: 23px 0;
+  padding: 12px 0;
 }
 .history-order__column-top:first-child {
   width: 13%;
@@ -3293,6 +3307,15 @@ details summary::-webkit-details-marker {
 .history-order__text {
   padding-bottom: 10px 10px 10px;
   border-bottom: 1px solid #000000;
+}
+.history-order__pillar-gray {
+  color: #696969 !important;
+}
+.history-order__wrap__tbl {
+  padding: 20px;
+}
+.history-order__text-first {
+  margin-left: 10px;
 }
 
 .data__wrapper {
