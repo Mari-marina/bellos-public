@@ -736,8 +736,8 @@ details summary::-webkit-details-marker {
 }
 
 .main__img__block:hover .rot {
-  animation: 1s linear 0s normal none infinite running rot;
-  -webkit-animation: 1s linear 0s normal none infinite running rot;
+  animation: 1.5s linear 0s normal none infinite running rot;
+  -webkit-animation: 1.5s linear 0s normal none infinite running rot;
 }
 @keyframes rot {
   0% {
@@ -753,6 +753,29 @@ details summary::-webkit-details-marker {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media all and (max-width: 950px) {
+  .main__img__block .rot {
+    animation: 2s linear 0s normal none infinite running rot;
+    -webkit-animation: 2s linear 0s normal none infinite running rot;
+  }
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 
@@ -3849,7 +3872,7 @@ span {
 }
 
 .swiper-slide {
-  width: 70% !important;
+  width: 68% !important;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
